@@ -71,39 +71,6 @@ export default function Careers() {
     return match
   })
 
-  const values = [
-    {
-      icon: 'lock',
-      title: 'Openness',
-      description:
-        'Onward Tech believes in transparency in all areas and free, unrestricted access to knowledge and information. We incorporate and promote positive collaboration, cooperative management and decision-making with an emphasis on learning.',
-    },
-    {
-      icon: 'diamond',
-      title: 'Hunger For Excellence',
-      description:
-        'Emerging user behavior, interactions and expectations around technology are forcing constant and more frequent innovation and adaptation. We act on the principle “There is no best, only better.”',
-    },
-    {
-      icon: 'person',
-      title: 'Customer First',
-      description:
-        'Our stakeholders expect more than just vendors, they are looking for reliable, strategic partners. In everything we do, the only question we look to answer is “How will this add value.”',
-    },
-    {
-      icon: 'link',
-      title: 'Responsive',
-      description:
-        'Everyone and everything is connected. We must respond swiftly and with purpose to the changes around us.',
-    },
-    {
-      icon: 'shield',
-      title: 'Integrity',
-      description:
-        'What we do, what we say, what we see do. There is no compromise when it comes to doing the right thing.',
-    },
-  ]
-
   return (
     <section id="careers" className="careers-page section">
       <div className="careers-banner">
@@ -236,26 +203,6 @@ export default function Careers() {
         </div>
       </div>
 
-      <div className="container values-shell">
-        <h2 className="values-title">Our Values</h2>
-        <div className="values-divider" />
-
-        <div className="values-grid">
-          {values.map((value) => (
-            <article key={value.title} className="value-card">
-              <div className="value-icon value-icon--lock" aria-hidden="true">
-                {value.icon === 'lock' && '🔒'}
-                {value.icon === 'diamond' && '💎'}
-                {value.icon === 'person' && '👤'}
-                {value.icon === 'link' && '🔗'}
-                {value.icon === 'shield' && '🛡️'}
-              </div>
-              <h3>{value.title}</h3>
-              <p>{value.description}</p>
-            </article>
-          ))}
-        </div>
-      </div>
     </section>
   )
 }

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link, NavLink, Outlet } from 'react-router-dom'
+import logo from './assets/logo.png'
 import './App.css'
 
 function App() {
@@ -10,11 +11,7 @@ function App() {
       <header className={`site-header ${menuOpen ? 'nav-open' : ''}`}>
         <div className="container nav-wrap">
           <Link to="/" className="brand" aria-label="BGLW Technologies home">
-            <span className="brand-mark">B</span>
-            <span className="brand-text">
-              <strong>BGLW</strong>
-              <small>TECHNOLOGIES</small>
-            </span>
+            <img src={logo} alt="BGLW Technologies logo" className="brand-logo" />
           </Link>
 
           <button
@@ -31,7 +28,18 @@ function App() {
 
           <nav className="site-nav" aria-label="Main navigation">
             <NavLink to="/services" onClick={() => setMenuOpen(false)} className={({ isActive }) => `nav-link${isActive ? ' active' : ''}`}>Services</NavLink>
-            <NavLink to="/about" onClick={() => setMenuOpen(false)} className={({ isActive }) => `nav-link${isActive ? ' active' : ''}`}>About</NavLink>
+            <div className="about-menu">
+              <NavLink to="/about" onClick={() => setMenuOpen(false)} className={({ isActive }) => `nav-link${isActive ? ' active' : ''}`}>About</NavLink>
+              <div className="about-menu-items">
+                <NavLink
+                  to="/who-we-are"
+                  onClick={() => setMenuOpen(false)}
+                  className={({ isActive }) => `about-menu-link${isActive ? ' active' : ''}`}
+                >
+                  Who We Are
+                </NavLink>
+              </div>
+            </div>
             <NavLink to="/careers" onClick={() => setMenuOpen(false)} className={({ isActive }) => `nav-link${isActive ? ' active' : ''}`}>Careers</NavLink>
             <NavLink to="/contact" onClick={() => setMenuOpen(false)} className={({ isActive }) => `nav-link${isActive ? ' active' : ''}`}>Contact</NavLink>
           </nav>
@@ -50,17 +58,13 @@ function App() {
         <div className="container footer-grid">
           <div className="footer-brand-block">
             <Link to="/" className="brand footer-brand" aria-label="BGLW Technologies home">
-              <span className="brand-mark">B</span>
-              <span className="brand-text">
-                <strong>BGLW</strong>
-                <small>TECHNOLOGIES</small>
-              </span>
+              <img src={logo} alt="BGLW Technologies logo" className="brand-logo" />
             </Link>
           </div>
 
           <div className="footer-column">
             <h3>About Us</h3>
-            <Link to="/about">Who We Are</Link>
+            <Link to="/who-we-are">Who We Are</Link>
           </div>
 
           <div className="footer-column">
@@ -87,6 +91,8 @@ function App() {
 
           <div className="footer-column social-column">
             <h3>Connect With Us</h3>
+            <a href="mailto:namaste@bglwtech.com">namaste@bglwtech.com</a>
+            <a href="tel:9765539953">+91 97655 39953</a>
             <a href="https://www.linkedin.com/company/bglw-technologies/" target="_blank" rel="noreferrer" className="linkedin-link" aria-label="LinkedIn">
               Linked<span>in</span>
             </a>

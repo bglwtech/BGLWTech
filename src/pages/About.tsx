@@ -1,13 +1,4 @@
 export default function About() {
-  const companyFacts = [
-    { label: 'Phone', value: '9765539953' },
-    { label: 'Industry', value: 'IT Services and IT Consulting' },
-    { label: 'Company size', value: '2-10 employees' },
-    { label: 'Headquarters', value: 'Pune, Maharashtra' },
-    { label: 'Founded', value: '2026' },
-    { label: 'Founder', value: 'BGLW Leadership' },
-  ]
-
   return (
     <section id="about" className="section about-section">
       <div className="container about-shell">
@@ -26,15 +17,6 @@ export default function About() {
             company grows, we continue to expand with a broader mindset around modern
             software engineering, digital transformation, and emerging technology delivery.
           </p>
-        </div>
-
-        <div className="about-facts">
-          {companyFacts.map((fact) => (
-            <div className="fact-item" key={fact.label}>
-              <span>{fact.label}</span>
-              <strong>{fact.value}</strong>
-            </div>
-          ))}
         </div>
 
         <div className="about-grid">
@@ -57,6 +39,7 @@ export default function About() {
             </p>
           </article>
         </div>
+
       </div>
     </section>
   )
