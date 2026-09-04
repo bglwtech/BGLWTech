@@ -21,21 +21,19 @@ export default function About() {
 
         <div className="about-grid">
           <article className="about-card accent">
-            <span className="card-kicker">Our focus</span>
+            <span className="card-kicker">Our Vision</span>
             <h3>Embedded systems and automotive software are where we started.</h3>
-            <p>
-              We bring expertise in firmware development, embedded software, Linux, BSP,
-              device drivers, SoC bring-up, bootloaders, AUTOSAR, automotive protocols, and
-              cybersecurity to help teams build robust, secure products.
+            <p>To build smarter tech solutions that empower us all, transforming ideas 
+              into sustainable digital realities across IT and embedded landscapes.
             </p>
           </article>
 
           <article className="about-card">
-            <span className="card-kicker">Our mission</span>
+            <span className="card-kicker">Our Mission</span>
             <h3>To help businesses build better products and solve complex engineering challenges.</h3>
             <p>
-              We combine deep technical capability with practical execution to help companies
-              innovate faster, reduce risk, and deliver software that performs under real-world conditions.
+              To deliver reliable, bespoke software and embedded solutions from initial concept to long-term 
+              maintenance—fostering enduring partnerships, exceptional user experiences, and measurable value for our clients
             </p>
           </article>
         </div>

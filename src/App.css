@@ -1325,28 +1325,30 @@ p {
 .feature-card {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 26px 22px 20px;
-  border-radius: 24px;
-  border: 1px solid rgba(154, 177, 196, 0.12);
-  background: linear-gradient(180deg, rgba(13, 24, 35, 0.8), rgba(11, 22, 31, 0.94));
-  box-shadow: 0 18px 44px rgba(1, 8, 15, 0.18);
-  color: #edf7fb;
+  align-items: stretch;
+  padding: 28px 24px 24px;
+  border-radius: 18px;
+  border: 1px solid rgba(14, 124, 166, 0.16);
+  background: #ffffff;
+  box-shadow: 0 18px 40px rgba(31, 75, 91, 0.1);
+  color: #123344;
 }
 
 .feature-card h3 {
   margin: 0 0 12px;
-  font-size: 1.3rem;
-  line-height: 1.25;
-  letter-spacing: -0.04em;
-  color: #ffffff;
+  font-size: 1.18rem;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+  color: #123344;
+  text-align: left;
 }
 
 .feature-card p {
   margin: 0;
-  color: rgba(237, 247, 251, 0.8);
-  font-size: 0.98rem;
-  line-height: 1.7;
+  color: #526674;
+  font-size: 0.94rem;
+  line-height: 1.72;
+  text-align: left;
 }
 
 .why-bglw-section {
@@ -1881,14 +1883,16 @@ p {
 }
 
 .about-card {
-  padding: 26px 22px 22px;
-  border-radius: 24px;
-  border: 1px solid rgba(154, 177, 196, 0.12);
-  background: linear-gradient(180deg, rgba(15, 27, 37, 0.82), rgba(8, 18, 26, 0.9));
+  padding: 30px 28px 26px;
+  border-radius: 18px;
+  border: 1px solid rgba(14, 124, 166, 0.16);
+  background: #ffffff;
+  box-shadow: 0 18px 40px rgba(31, 75, 91, 0.1);
 }
 
 .about-card.accent {
-  background: linear-gradient(135deg, rgba(89, 210, 255, 0.08), rgba(18, 35, 48, 0.9));
+  background: #eaf8fb;
+  border-color: rgba(14, 124, 166, 0.24);
 }
 
 .card-kicker {
@@ -1902,7 +1906,18 @@ p {
 }
 
 .about-card h3 {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  color: #123344;
+  font-size: 1.35rem;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+}
+
+.about-card p {
+  margin-bottom: 0;
+  color: #526674;
+  font-size: 0.98rem;
+  line-height: 1.75;
 }
 
 .about-details-link {
@@ -1970,6 +1985,26 @@ p {
 
 .leadership-card p {
   margin-bottom: 0;
+}
+
+.linkedin-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin-top: 22px;
+  color: #0a66c2;
+}
+
+.linkedin-link img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.linkedin-link:hover {
+  color: #004182;
 }
 
 .about-panel {

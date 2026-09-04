@@ -1,5 +1,6 @@
 import bahuraoPhoto from '../assets/bahurao-removebg-preview.png'
 import balajiPhoto from '../assets/balaji.w-removebg-preview.png'
+import linkedinLogo from '../assets/linkdin_logo-removebg-preview.png'
 import nikitaPhoto from '../assets/nikita.w_2-removebg-preview.png'
 
 export default function WhoWeAre() {
@@ -29,6 +30,15 @@ export default function WhoWeAre() {
               <h3>Bhaurao Kanhekar</h3>
               <span className="card-kicker">Director</span>
               <p>3 decades of engineering experience.</p>
+              <a
+                className="linkedin-link"
+                href="https://www.linkedin.com/in/bhaurao-kanhekar-178b0842a/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="View Bhaurao Kanhekar on LinkedIn"
+              >
+                <img src={linkedinLogo} alt="" aria-hidden="true" />
+              </a>
             </article>
             <article className="leadership-card">
               <img className="leadership-photo" src={nikitaPhoto} alt="Nikita W" />
@@ -46,6 +56,15 @@ export default function WhoWeAre() {
               <h3>Balaji Wanole</h3>
               <span className="card-kicker">Technical Adviser</span>
               <p>11 years of technical expertise.</p>
+              <a
+                className="linkedin-link"
+                href="https://www.linkedin.com/in/balajiwanole/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="View Balaji Wanole on LinkedIn"
+              >
+                <img src={linkedinLogo} alt="" aria-hidden="true" />
+              </a>
             </article>
           </div>
         </div>
